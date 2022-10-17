@@ -1,0 +1,7 @@
+body {
+    /* background-image: url("https://media2.giphy.com/media/Xev2JdopBxGj1LuGvt/giphy.gif?cid=5446ed9b6xselmfy32crothy2rijqcwwb1vedkc6z6sijjvu&rid=giphy.gif&ct=g"); */
+    height: 500px; /* You must set a specified height */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; 
+   }
