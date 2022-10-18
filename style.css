@@ -1,7 +1,50 @@
 body {
-    /* background-image: url("https://media2.giphy.com/media/Xev2JdopBxGj1LuGvt/giphy.gif?cid=5446ed9b6xselmfy32crothy2rijqcwwb1vedkc6z6sijjvu&rid=giphy.gif&ct=g"); */
     height: 500px; /* You must set a specified height */
     background-position: center; /* Center the image */
     background-repeat: no-repeat; /* Do not repeat the image */
     background-size: cover; 
+    margin: 0;
+    font-family: 'Dosis', sans-serif;
    }
+
+header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding:20px;
+    height: 50px;
+    border: 2px solid black;
+    background-color: rgb(52, 58, 64);
+    color: white;
+    margin-bottom: 10px;
+}
+
+.entry{
+    display: flex;
+    justify-content: space-around;
+    gap: 3%;
+}
+.output{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+button, input{
+    padding: 4%;
+    background-color: aquamarine;
+    border-radius: 20%;
+    color: purple;
+    font-weight: bold;
+    border: 2px solid orange;
+}
+main{
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+    background-color: darkgray;
+    color: whitesmoke;
+    border-radius: 1%;
+    color: rgb(169, 101, 175)
+}
+
