@@ -19,7 +19,7 @@ document.querySelector('button').addEventListener('click', function(){
             winds.innerText = `Wind Speed: ${data.wind.speed} m/sec`
         })
 
-    fetch(`https://api.giphy.com/v1/gifs/translate?api_key=gMGtuhMQv4ZfzS8GrMUDmR2oT7gWNokB&s=sunny`)
+    fetch(`https://api.giphy.com/v1/gifs/translate?api_key=gMGtuhMQv4ZfzS8GrMUDmR2oT7gWNokB&s=thunderstorm`)
     .then(res => res.json())
     
     .then(data => {
