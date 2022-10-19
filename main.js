@@ -1,7 +1,11 @@
-
-
-
-
+fetch(`https://api.giphy.com/v1/gifs/translate?api_key=gMGtuhMQv4ZfzS8GrMUDmR2oT7gWNokB&s=cat`)
+    .then(res => res.json())
+    
+    .then(data => {
+        console.log(data.data.images.original.url)
+        let x = data.data.images.original.url
+        document.body.style.backgroundImage = `url(${x})`
+    })
 const tem = document.querySelector('h1')
 const winds = document.querySelector('h2')
 
@@ -15,7 +19,7 @@ document.querySelector('button').addEventListener('click', function(){
             winds.innerText = `Wind Speed: ${data.wind.speed} m/sec`
         })
 
-    fetch(`https://api.giphy.com/v1/gifs/translate?api_key=gMGtuhMQv4ZfzS8GrMUDmR2oT7gWNokB&s=puppy`)
+    fetch(`https://api.giphy.com/v1/gifs/translate?api_key=gMGtuhMQv4ZfzS8GrMUDmR2oT7gWNokB&s=sunny`)
     .then(res => res.json())
     
     .then(data => {
@@ -23,8 +27,4 @@ document.querySelector('button').addEventListener('click', function(){
         let x = data.data.images.original.url
         document.body.style.backgroundImage = `url(${x})`
     })
-}
-    
-
-
-)
+})
